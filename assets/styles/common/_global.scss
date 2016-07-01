@@ -1,0 +1,136 @@
+body,
+nav,
+header,
+section,
+footer,
+.container {
+  position: relative;
+}
+
+body {
+	font-family:"proxima nova";
+}
+
+.section {
+	padding: 30px 0;
+	&.section-white {
+		background: #fff;
+		text-align: center;
+		hr, .page-header {
+			border-color: #eee;
+		}
+		h1 {
+			font-size:50px;
+			font-weight:800;
+			color:#f04e45;
+			margin-top:-20px;
+		}
+		h2 {
+			font-weight:700;
+		}
+		h4 {
+			color:#f04e45;
+			font-weight:800;
+		}
+	}
+	&.section-gray {
+    background: #f5f5f5;
+		hr, .page-header {
+			border-color: #eee;
+		}
+	}
+	&.section-red {
+		background: #f04e45;
+		min-height: 800px;
+		hr, .page-header {
+			border-color: rgba(0,0,0,0.1);
+		}
+		h2 {
+			font-weight:700;
+			color: #f1bf5b;
+			span {
+				color:#fff;
+			}
+		}
+	}
+	&.section-lg {
+  	padding: 60px 0;
+		min-height: 100vh;
+	}
+}
+
+.center-vert {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.widget {
+  margin-bottom: 30px;
+}
+
+hr {
+  margin: 30px 0;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 700;
+  &.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    border-width: 2px;
+    &.btn-primary {
+      color: $brand-primary;
+      &:hover {
+        color: #fff;
+        background: $brand-primary;
+      }
+    }    
+    &.btn-success {
+      color: $brand-success;
+      &:hover {
+        color: #fff;
+        background: $brand-success;
+      }
+    }
+    &.btn-info {
+      color: $brand-info;
+      &:hover {
+        color: #fff;
+        background: $brand-info;
+      }
+    }
+    &.btn-warning {
+      color: $brand-warning;
+      &:hover {
+        color: #fff;
+        background: $brand-warning;
+      }
+    }
+    &.btn-danger {
+      color: $brand-danger;
+      &:hover {
+        color: #fff;
+        background: $brand-danger;
+      }
+    }
+  }
+}
+.m-t-0 {
+	margin-top:0;
+}
+.m-t-15 {
+	margin-top:15px !important;
+}
+.m-t-25 {
+	margin-top:25px !important;
+}
+.m-t-50 {
+	margin-top:50px !important;
+}
+

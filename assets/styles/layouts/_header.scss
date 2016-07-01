@@ -1,0 +1,19 @@
+.navbar {
+	margin-bottom: 0;
+}
+.navbar-brand {
+	background-image:url('../../dist/images/nmi-logo.png');
+	background-repeat: no-repeat;
+	background-size:120px 100px;
+	width:120px;
+	height:100px;
+}
+
+.navbar-nav {
+	>li {
+		>a {
+			padding:40px 20px;
+		}
+	}
+}
+
