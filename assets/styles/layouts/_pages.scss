@@ -2,15 +2,29 @@
 	background-image:url('../../dist/images/intro-image.jpg');
 	background-repeat:no-repeat;
 	background-size:cover;
+	background-position: center bottom;
 	min-height:600px;
+	@media only screen and (max-width: 480px) {
+		max-height:800px;
+		}
 	}
 	
 //01. intro-section styles 
 
 .intro-front {
-	margin-top:224px;
+	margin-top:200px;
 	margin-bottom:135px;
 	font-family:"proxima-nova", sans-serif;
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
+		margin-top:160px;
+		text-align: center;
+	}
+	@media only screen and (min-width: 481px) and (max-width: 767px) {
+		margin-top:70px;
+	}
+	@media only screen and (min-width: 768px) and (max-width: 1024px) {
+		margin-top:140px;
+	}
 }
 .intro-front h3 {
 	font-size:48px;
@@ -19,6 +33,10 @@
 	text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
 	margin-bottom:0px;
 	margin-top:0px;
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
+		font-size:25px;
+		margin:0;
+	}
 }
 .intro-front h2 {
 	font-size:100px;
@@ -26,4 +44,7 @@
 	color:#ffffff;
 	text-shadow: 0px 2px 2px rgba(0,0,0,0.4);
 	margin-top:2px;
+	@media only screen and (min-width: 320px) and (max-width: 480px) {
+		font-size:55px;
+	}
 }
